@@ -18,4 +18,4 @@ O projeto **Dashboard para Análise de Infrações e Multas Municipais** tem com
 | Diassis Bezerra Nascimento                | 221007985   | [Diaxiz](https://github.com/Diaxiz)           |
 
 ## Licence referral
-https://opensource.org/license/mit
+[MIT Lisense](https://github.com/unb-mds/2024-2-Squad09/blob/main/LICENSE)

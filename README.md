@@ -16,3 +16,6 @@ O projeto **Dashboard para Análise de Infrações e Multas Municipais** tem com
 | Filipe Bressanelli Azevedo Filho         | 222024579   | [fbressa](https://github.com/fbressa)         |
 | Gustavo Gontijo Lima                      | 231011426   | [Guga301104](https://github.com/Guga301104)   |
 | Diassis Bezerra Nascimento                | 221007985   | [Diaxiz](https://github.com/Diaxiz)           |
+
+## Licence referral
+https://opensource.org/license/mit

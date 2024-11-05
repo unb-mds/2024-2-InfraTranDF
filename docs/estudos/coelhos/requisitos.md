@@ -1,4 +1,4 @@
-## Arquitetura de Software
+## Requisitos de Software
 
 **O que é?**
 Requisitos de Software representa a necessidade de um projeto para atender e resolver um problema específico, de forma eficaz. Esses requisitos descrevem as funcionalidades, características, restrições e objetivos que o sistema deve incorporar para atender às necessidades dos usuários.

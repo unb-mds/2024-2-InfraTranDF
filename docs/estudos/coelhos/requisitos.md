@@ -4,7 +4,7 @@
 Requisitos de Software representa a necessidade de um projeto para atender e resolver um problema específico, de forma eficaz. Esses requisitos descrevem as funcionalidades, características, restrições e objetivos que o sistema deve incorporar para atender às necessidades dos usuários.
 
 **Como funciona?**
-O funcionamento da engenharia de requisitos é um processo estruturado que envolve várias etapas para garantir que o software atenda às necessidades e expectativas dos usuários. Sendo eles:
+O funcionamento da engenharia de requisitos é um processo estruturado que envolve várias etapas para garantir que o software atenda às necessidades e expectativas dos usuários. Sendo eles: 
 
 1. **Elicitação de Requisitos:**
 A elicitação é a primeira fase e envolve descobrir o que os usuários precisam do software. Esse processo é semelhante a uma investigação, onde se busca entender o problema e as expectativas. Durante essa fase, podemos utilizar workshops para debater, pela visão do usuário, as necessidades do projeto.

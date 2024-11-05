@@ -10,6 +10,10 @@ Noção definida dos aspectos mais importantes do design interno de um sistema d
 
 A melhor maneira de definir e a melhor visão é **o entendimento compartilhado de que os desenvolvedores especialistas têm do design do sistema**. Também é definido como **as decisões que você gostaria de poder acertar cedo em um projeto**. Pensar arqutetonicamente sobre software é decidir o que é importante e depois, gastar energia em manter os elementos arquitetônicos em bom estado. Para um desenvolvedor se tornar um arquiteto, ele precisa ser capaz de reconhecer os elementos mais importantes, percebendo quais elementos podem resultar em problemas sérios se não forem controlados.
 
+**Lista de coelhos:**
+- Gustavo Gontijo
+- Diassis Nascimento
+
 ## Importância da arquitetura
 
 A arquitetura é algo que os clientes não percebem imediatamente, mas a aquitetura pobre é um dos principais contribuintes para o crescimento de elementos cruft no software. Software com muitos crufts é mais fácil de ser modificado levando a recursos mais lentos e com mais defeitos.

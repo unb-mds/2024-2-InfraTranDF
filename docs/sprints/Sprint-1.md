@@ -8,9 +8,9 @@ Foi decidino na sprint está semama será levanto os requisitos do projeto, alé
 
 ### Tópicos
 
-- [x] Criar templates para sprint, commits e pull request; #10
-- [ ] Levantemento dos requisitos do projeto;
-- [ ] Subir uma primeira versão da *gitPage*;
+- [x] Criar templates para sprint, commits e pull request;
+- [x] Levantemento dos requisitos do projeto;
+- [x] Subir uma primeira versão da *gitPage*;
 
 ## Reuniões
 
@@ -29,9 +29,10 @@ Local: Discord
 
 ## Finalização
 
-> Faça um resumo do que realmente foi feito durante a sprint e quais tarefas foram passadas para a próxima sprint.
+Todas as tarefas propostas foram cumpritas, finalizando assim a sprint 1.
+[Primeira versão dos requisitos](https://docs.google.com/document/d/1R-NlvksRK5-jnl0yvC3goqoHi323VMPOBLQpyyiK4UQ).
 
 ### Observações
 
-> Espaço para registrar observações.
+Sem observações.
 

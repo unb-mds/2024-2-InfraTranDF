@@ -9,7 +9,7 @@ O [InfraTranDF](https://github.com/unb-mds/2024-2-InfraTranDF) é uma iniciativa
 - **Acessar Informações sobre Infrações:** Consultar facilmente registros de infrações de trânsito, com detalhes como o tipo e descrição de cada ocorrência.
 - **Reportar Incidentes:** Usuários podem relatar infrações observadas, anexando título, descrição e imagem, contribuindo ativamente para a segurança no trânsito.
 
-Este projeto é distribuído como software livre, sob a licença [MIT](./LICENSE).
+Este projeto é distribuído como software livre, sob a licença [MIT](https://github.com/unb-mds/2024-2-InfraTranDF/blob/main/LICENSE).
 
 ## 📑 Índice
 

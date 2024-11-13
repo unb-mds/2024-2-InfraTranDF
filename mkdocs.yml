@@ -1,6 +1,7 @@
 site_name: Docs - InfraTran
 theme:
   name: material
+  language: pt
   features:
     - navigation.tabs
     - navigation.sections
@@ -11,7 +12,6 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: pt-br
   palette:
     - scheme: default
       toggle: 

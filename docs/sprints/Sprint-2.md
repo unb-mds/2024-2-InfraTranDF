@@ -8,11 +8,11 @@ Agora com uma primeira versão dos requisitos esta semana será avaliado a viabi
 
 ### Tópicos
 
-- [ ] Filtragem de requisitos;
+- ~~[ ] Filtragem de requisitos;~~
 - [ ] Prototipação do front-end no figma;
-- [ ] Criação da arquitetura no figma;
-- [ ] Buscar uma fonte confiavél de dados do Detran;
-- [ ] Estudar as tecnologia que serão utilizadas (javascript, react, docker);
+- [x] Criação da arquitetura;
+- ~~[ ] Buscar uma fonte confiavél de dados do Detran;~~
+- [x] Estudar as tecnologia que serão utilizadas (javascript, react, docker);
 
 ## Reuniões
 
@@ -28,14 +28,18 @@ Local: Discord
 - Decidimos criar as primeiras prototipações no figma;
 - Foi discutido as tecnologias que serão utilizadas no front-end e back-end.
     - Front-end: React;
-    - Back-end: Node;
+    - Back-end: NodeJs;
     - Scraper: Python;
 
 ## Finalização
 
-> Faça um resumo do que realmente foi feito durante a sprint e quais tarefas foram passadas para a próxima sprint.
+Nessa sprint foi feito:
+ - Criação da primeira documentação da arquitetura;
+ - Foi estudado tecnologias como docker para o ambiente de denvolvimento e react para o Front-end;
+- A mudança do tema(dashboard de multas e infrações) para (coleta, análise e divulgação de dados sobre incendios);
+- Foi estudado React e ambiente de desenvolvimento;
+- A prototipação no figma não foi realizada e foi passada para a próxima semana;
 
 ### Observações
 
-> Espaço para registrar observações.
-
+A mudança repentina no tema prejudicou a organização e produtividade da equipe.

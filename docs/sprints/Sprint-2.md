@@ -34,8 +34,9 @@ Local: Discord
 ## Finalização
 
 Nessa sprint foi feito:
- - Criação da primeira documentação da arquitetura;
- - Foi estudado tecnologias como docker para o ambiente de denvolvimento e react para o Front-end;
+
+- Criação da primeira documentação da arquitetura;
+- Foi estudado tecnologias como docker para o ambiente de denvolvimento e react para o Front-end;
 - A mudança do tema(dashboard de multas e infrações) para (coleta, análise e divulgação de dados sobre incendios);
 - Foi estudado React e ambiente de desenvolvimento;
 - A prototipação no figma não foi realizada e foi passada para a próxima semana;

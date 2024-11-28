@@ -108,9 +108,13 @@ Acesse a documentação completa do projeto [aqui](https://unb-mds.github.io/202
 
 ## 🔗 Links Úteis
 
-### Diagrama de Arquitetura
+### Story Map
 
-- Visualize o diagrama de arquitetura do projeto [aqui](https://www.figma.com/).
+- Para acessar o Story Map, clique [aqui](https://miro.com/app/board/uXjVL-P6Y-c=/?share_link_id=434250135699).
+
+### Arquitetura
+
+- Visualize o diagrama de arquitetura do projeto, clique [aqui](https://www.figma.com/).
 
 ### Protótipo Visual
 

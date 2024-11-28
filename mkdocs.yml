@@ -39,6 +39,8 @@ nav:
      - Sprint 0 : sprints/Sprint-0.md
      - Sprint 1: sprints/Sprint-1.md
      - Sprint 2: sprints/Sprint-2.md
+     - Sprint 3: sprints/Sprint-3.md
+     - Sprint 4: sprints/Sprint-4.md
 
 markdown_extensions:
   - pymdownx.highlight:

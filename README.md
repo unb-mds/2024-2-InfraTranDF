@@ -118,4 +118,4 @@ Acesse a documentação completa do projeto [aqui](https://unb-mds.github.io/202
 
 ### Protótipo Visual
 
-- Para visualizar o protótipo do projeto, clique [aqui](https://www.figma.com/).
+- Para visualizar o protótipo do projeto, clique [aqui](https://www.figma.com/design/mPqnz5g1fNN7PVtIgwt0ln/Queimadas-UnB?node-id=0-1&node-type=canvas&t=oHqySMJ71eFv4Tow-0).

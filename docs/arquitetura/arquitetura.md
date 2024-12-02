@@ -1,10 +1,17 @@
 # Arquitetura
 
-## Visão Geral
+## Introdução
 A arquitetura de software é o alicerce de qualquer sistema, representando as decisões fundamentais sobre a estrutura e organização de seus componentes. Ela define como diferentes partes do sistema interagem entre si e como essas interações sustentam as funcionalidades desejadas. Este documento apresentará as informações necessárias para entender a arquitetura e o funcionamento do nosso software.
 
 ### Diagrama de arquitetura
 ![Diagrama arquitetura](diagrama.png)
+
+## Visão Geral
+
+1. O Usuário irá acessar nossa página
+2. Irá selecionar qual Estado deseja obter informações 
+3. O usuário irá observar no mapa as informações que deseja
+4. O usuário decide se quer receber atualizações em seu e-mail da pesquisa (necessário ter conta)
 
 ## Tecnologias
 
@@ -28,3 +35,17 @@ O back-end é a camada que gerencia a lógica de negócios, processamento de dad
 ### Banco de Dados:
 O banco de dados é responsável por armazenar e gerenciar as informações da aplicação de forma segura e eficiente. Para este projeto, será utilizado o MySQL, uma solução robusta e confiável, ideal para lidar com operações de leitura, escrita e atualização dos dados.
   
+## Tecnologias utilizadas 
+
+- DevOps:
+    - Docker: Docker é utilizado para containerizar o ambiente de desenvolvimento e produção, garantindo consistência entre diferentes máquinas e facilitando a implantação de novas versões da aplicação.
+
+- Back-end:
+    - Node.js: Utilizado para construir APIs rápidas e escaláveis, aproveitando sua arquitetura baseada em eventos para gerenciar um grande número de requisições simultâneas.
+    - Python: Responsável pelo desenvolvimento de scripts e serviços de apoio, como processamento de dados e integração com outras ferramentas, aproveitando sua ampla gama de bibliotecas.
+
+- Front-end:
+    - React: Framework JavaScript utilizado para criar interfaces dinâmicas e responsivas, proporcionando uma experiência de usuário interativa e fluida.
+
+- Banco de Dados:
+    - PostgreSQL: Banco de dados relacional utilizado para armazenamento confiável e eficiente, com suporte a consultas complexas e segurança robusta.

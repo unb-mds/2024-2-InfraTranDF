@@ -2,18 +2,18 @@ Aqui está uma versão diferenciada em markdown:
 
 ---
 
-# [InfraTranDF](https://github.com/unb-mds/2024-2-InfraTranDF)
+# [ChamaControl](https://github.com/unb-mds/2024-2-ChamaControl)
 
-O [InfraTranDF](https://github.com/unb-mds/2024-2-InfraTranDF) é uma iniciativa da disciplina **Métodos de Desenvolvimento de Software** com o propósito de criar uma plataforma intuitiva, onde cidadãos possam ter acesso e reportar informações sobre infrações e multas de trânsito no Distrito Federal. A ideia central é facilitar o acesso e a transparência, permitindo que usuários possam:
+O [ChamaControl](https://github.com/unb-mds/2024-2-ChamaControl) é uma iniciativa da disciplina **Métodos de Desenvolvimento de Software** com o propósito de criar uma plataforma intuitiva, onde cidadãos possam ter acesso e monitorar informações sobre queimadas que possam estar acontecendo pelo território brasileiro. A ideia central é facilitar o acesso e a transparência, permitindo que usuários possam:
 
-- **Acessar Informações sobre Infrações:** Consultar facilmente registros de infrações de trânsito, com detalhes como o tipo e descrição de cada ocorrência.
-- **Reportar Incidentes:** Usuários podem relatar infrações observadas, anexando título, descrição e imagem, contribuindo ativamente para a segurança no trânsito.
+- **Visualizar Informações sobre Queimadas:** Consultar facilmente registros, condições climáticas alarmantes e alertas de possíveis ocorrências de queimadas.
+- **Receber alertas personalizados:** Usuários podem filtrar determinada área do território para receber alertas.
 
-Este projeto é distribuído como software livre, sob a licença [MIT](https://github.com/unb-mds/2024-2-InfraTranDF/blob/main/LICENSE).
+Este projeto é distribuído como software livre, sob a licença [MIT](https://github.com/unb-mds/2024-2-ChamaControl/blob/main/LICENSE).
 
 ## 📑 Índice
 
-- [InfraTranDF](#infratrandf)
+- [ChamaControl](#chamacontrol)
   - [📑 Índice](#-índice)
   - [👤 Equipe](#-equipe)
   - [🚀 Primeiros Passos](#-primeiros-passos)
@@ -38,7 +38,7 @@ Este projeto é distribuído como software livre, sob a licença [MIT](https://g
 Para clonar este repositório, execute:
 
 ```bash
-git clone https://github.com/unb-mds/2024-2-InfraTranDF.git
+git clone https://github.com/unb-mds/2024-2-ChamaControl.git
 ```
 
 ### 🛠 Pré-requisitos
@@ -104,7 +104,7 @@ docker exec django-api python3 ./manage.py updatedb -a
 
 ## 📖 Documentação
 
-Acesse a documentação completa do projeto [aqui](https://unb-mds.github.io/2024-2-InfraTranDF/).
+Acesse a documentação completa do projeto [aqui](https://unb-mds.github.io/2024-2-ChamaControl/).
 
 ## 🔗 Links Úteis
 

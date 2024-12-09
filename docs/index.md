@@ -1,8 +1,8 @@
-# InfraTran
+# ChamaControl
 
 ## Sobre
 
-O projeto InfraTran tem como objetivo criar uma plataforma acessível e intuitiva, onde os usuários possam visualizar informações sobre multas e infrações de trânsito cometidas no Distrito Federal. Nossa proposta é proporcionar uma interface clara que permita aos usuários:
+O [ChamaControl](https://github.com/unb-mds/2024-2-ChamaControl) é uma iniciativa da disciplina **Métodos de Desenvolvimento de Software** com o propósito de criar uma plataforma intuitiva, onde cidadãos possam ter acesso e monitorar informações sobre queimadas que possam estar acontecendo pelo território brasileiro. A ideia central é facilitar o acesso e a transparência, permitindo que usuários possam:
 
-- Consultar Multas e Infrações: Visualizar de maneira simples as infrações de trânsito registradas, incluindo detalhes como o tipo da infração.
-- Enviar Denúncias: Os usuários poderão relatar infrações de forma rápida, enviando um título, descrição e uma foto como prova, contribuindo para um trânsito mais seguro e responsável.
+- **Visualizar Informações sobre Queimadas:** Consultar facilmente registros, condições climáticas alarmantes e alertas de possíveis ocorrências de queimadas.
+- **Receber alertas personalizados:** Usuários podem filtrar determinada área do território para receber alertas.

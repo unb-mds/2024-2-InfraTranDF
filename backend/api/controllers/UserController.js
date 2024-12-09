@@ -7,6 +7,7 @@ export default class UserController {
         this.userService = new UserService();
 
         this.createUser = this.createUser.bind(this);
+        this.findAll = this.findAll.bind(this);
     }
 
     async createUser(req, res) {
@@ -20,6 +21,16 @@ export default class UserController {
             res.status(201).json(responseDto);
         } catch (error) {
             res.status(400).json({ error: error.message });
+        }
+    }
+
+    async findAll(req, res) {
+        try {
+            const users = await this.userService.findAll();
+
+            res.status(201).json(users.map(user => new UserResponseDto(user)));
+        } catch (error) {
+            res.status(500).json({ error: error.message });
         }
     }
 }

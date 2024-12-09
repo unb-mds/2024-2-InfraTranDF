@@ -13,4 +13,16 @@ export default class UserRepository {
             });
         });
     }
+
+    async findAll() {
+        return new Promise((resolve, reject) => {
+            const query = 'SELECT * FROM USUARIO';
+            connection.query(query, (err, results) => {
+                if (err) {
+                    return reject(new Error('Erro ao obter usuários do banco de dados: ' + err.message));
+                }
+                resolve(results);
+            });
+        });
+    }
 }

@@ -25,8 +25,12 @@ export default class UserService {
         //     throw new Error('O email já está cadastrado.');
         // }
 
-        userDto.id = await this.userRepository.create(userDto);
+        userDto.idUsuario = await this.userRepository.create(userDto);
 
         return userDto;
+    }
+
+    async findAll() {
+        return await this.userRepository.findAll();
     }
 }

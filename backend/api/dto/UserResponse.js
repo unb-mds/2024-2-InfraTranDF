@@ -1,6 +1,6 @@
 export default class UserResponseDto {
-    constructor({ id, nome, email }) {
-        this.id = id;
+    constructor({ idUsuario, nome, email }) {
+        this.idUsuario = idUsuario;
         this.nome = nome;
         this.email = email;
     }

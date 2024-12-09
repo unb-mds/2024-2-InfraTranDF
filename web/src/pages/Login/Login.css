@@ -1,0 +1,69 @@
+/* src/components/LoginPage.module.css */
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 165px);
+    background: hsl(0, 0%, 96%);
+  }
+  
+  .loginBox {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    padding-top: 0px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .loginBox h2 {
+    margin-bottom: 30px;
+    color: #0c0c0c;
+    font-size: 2.5rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .inputGroup input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .loginButton {
+    background: #f3c404;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .loginButton:hover {
+    background: #cfa200;
+  }
+  
+  .errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }

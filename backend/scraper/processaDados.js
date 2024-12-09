@@ -63,6 +63,14 @@ fs.readdir(csvDir, (err, files) =>{
                     salvarNoBancoBatch(dadosBatch);
                 }
                 console.log('Arquivo CSV processado com sucesso.');
+
+                fs.unlink(csvPath, (err) => {
+                    if (err) {
+                        console.error(`Erro ao deletar o arquivo ${file}:`, err.message)
+                    } else {
+                        console.log(`Arquivo ${file} deletado com sucesso.`)
+                    }
+                })
             })
             .on('error', (err) => {
                 console.error('Erro ao ler o arquivo CSV:', err.message);

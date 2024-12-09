@@ -33,4 +33,8 @@ export default class UserService {
     async findAll() {
         return await this.userRepository.findAll();
     }
+
+    async findById(id) {
+        return await this.userRepository.findById(id);
+    }
 }

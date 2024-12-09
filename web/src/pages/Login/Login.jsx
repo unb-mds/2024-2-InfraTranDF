@@ -1,7 +1,9 @@
 // src/components/LoginPage/LoginPage.js
-import React, { useState, useContext } from "react";
-import styles from "./Login.css";
+import { useState, useContext } from "react";
+import styles from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
+
+import { AuthContext } from "../../context/AuthContext";
 
 const LoginPage = () => {
   const [email, setEmail] = useState(""); // Alterado de username para email
@@ -11,6 +13,19 @@ const LoginPage = () => {
 
   const navigate = useNavigate(); // Hook para redirecionamento
   const { login } = useContext(AuthContext); // Usar o contexto
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await login(email, password); // Tente fazer login com o e-mail e senha
+      navigate("/dashboard"); // Redireciona para o dashboard após o login
+    } catch (err) {
+      setError("Credenciais inválidas"); // Exibe mensagem de erro se falhar
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="pageWrapper">
@@ -57,3 +72,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+

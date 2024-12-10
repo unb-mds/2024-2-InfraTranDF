@@ -1,7 +1,7 @@
 // src/components/LoginPage/LoginPage.js
 import { useState, useContext } from "react";
 import styles from "./Login.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../context/AuthContext";
 
@@ -63,6 +63,8 @@ const LoginPage = () => {
             >
               {loading ? "Entrando..." : "Entrar"}
             </button>
+            <p className={styles.text}>Não tem uma conta?</p>
+            <Link to="/Register" className={styles.loginButton}>Criar conta</Link>
           </form>
         </div>
       </div>

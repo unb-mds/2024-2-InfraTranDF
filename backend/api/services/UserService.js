@@ -46,6 +46,15 @@ export default class UserService {
         return user;
     }
 
+    async findByEmail(email) {
+        const user = await this.userRepository.findByEmail(email);
+        
+        if (!user) {
+            return {};
+        }
+        return user;
+    }
+
     async hashPassword(password) {
         try {
             const salt = await bcrypt.genSalt(10);

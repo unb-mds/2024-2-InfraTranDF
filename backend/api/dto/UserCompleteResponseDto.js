@@ -3,7 +3,6 @@ export default class UserCompleteResponseDto {
         this.idUsuario = idUsuario;
         this.nome = nome;
         this.email = email;
-        this.eAdmin = eAdmin;
         this.recebeAlertas = recebeAlertas;
     }
 }

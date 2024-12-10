@@ -21,10 +21,12 @@ export default class UserService {
             throw new Error('A senha deve ter pelo menos 6 caracteres.');
         }
 
-        // const existingUser = await this.userRepository.findByEmail(email);
-        // if (existingUser) {
-        //     throw new Error('O email já está cadastrado.');
-        // }
+        const existingUser = await this.userRepository.findByEmail(email);
+        if (existingUser) {
+            throw new Error('O email já está cadastrado.');
+        }
+
+        userDto.senha = await this.hashPassword(senha);
 
         userDto.idUsuario = await this.userRepository.create(userDto);
 

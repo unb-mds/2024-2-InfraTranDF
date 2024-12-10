@@ -38,7 +38,12 @@ export default class UserService {
     }
 
     async findById(id) {
-        return await this.userRepository.findById(id);
+        const user = await this.userRepository.findById(id);
+
+        if (!user) {
+            throw new Error('Usuário não encontrado.');
+        }
+        return user;
     }
 
     async hashPassword(password) {

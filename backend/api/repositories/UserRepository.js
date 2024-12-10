@@ -33,9 +33,6 @@ export default class UserRepository {
                 if (err) {
                     return reject(new Error('Erro ao obter usuário do banco de dados: ' + err.message));
                 }
-                if (results.length === 0) {
-                    return reject(new Error('Usuário de ID ' + id + ' não encontrado.'));
-                }
                 resolve(results[0]);
             });
         });
@@ -47,9 +44,6 @@ export default class UserRepository {
             connection.query(query, [email], (err, results) => {
                 if (err) {
                     return reject(new Error('Erro ao obter usuário do banco de dados: ' + err.message));
-                }
-                if (results.length === 0) {
-                    return reject(new Error('Usuário de email ' + email + ' não encontrado.'));
                 }
                 resolve(results[0]);
             });

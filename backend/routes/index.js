@@ -2,6 +2,7 @@ import express from 'express';
 import UserController from '../api/controllers/UserController.js';
 import AuthController from '../api/controllers/AuthController.js';
 import authenticateToken from '../api/middlewares/AuthMiddleware.js';
+import authenticateAdminToken from '../api/middlewares/AdminMiddleware.js';
 
 const userController = new UserController();
 const authController = new AuthController();
@@ -13,7 +14,7 @@ router.get('/hello', (req, res) => {
 });
 
 router.post('/users', userController.createUser)
-router.get('/users', authenticateToken, userController.findAll)
+router.get('/users', authenticateAdminToken, userController.findAll)
 router.get('/users/:id', authenticateToken, userController.findById)
 
 router.post('/login', authController.authenticate)

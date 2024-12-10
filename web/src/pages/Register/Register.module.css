@@ -1,5 +1,5 @@
-/* src/components/LoginPage.module.css */
-.loginContainer {
+
+.signUpContainer {
     display: flex;
     align-items: stretch; /* Garante que os itens tenham a mesma altura */
     justify-content: center;
@@ -8,7 +8,7 @@
     min-height: calc(100vh - 165px);
   }
   
-  .loginBox {
+  .signUpBox {
     background: #fff;
     border-radius: 20px;
     padding: 40px;
@@ -24,9 +24,18 @@
     padding-bottom: 35px;
   }
   
-  .loginBox h2 {
+  .signUpImage {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 765px; /* Mantém a largura configurada */
+    height: 100%; /* Mantém a altura configurada */
+    object-fit: cover; /* Ajusta o conteúdo da imagem sem distorcer */
+  }
+  
+  .signUpBox h2 {
     margin-bottom: 30px;
-    color: #0c0c0c;
+    margin-top: 0px;
+    color: #333;
     font-size: 2.5rem;
   }
   
@@ -43,14 +52,15 @@
     color: #333;
   }
   
-  .inputGroup input {
+  .inputGroup input,
+  .inputGroup select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 0.9rem;
   }
   
-  .loginButton {
+  .signUpButton {
     display: block;
     background: #f57c00;
     color: #fff;
@@ -64,20 +74,22 @@
     transition: background 0.3s;
   }
   
-  .loginButton:hover {
+  .signUpButton:hover {
     background: #e66a00;
   }
   
-  .errorMessage {
-    background-color: #f8d7da;
-    color: #721c24;
-    border-radius: 5px;
+  /* SignUpPage.module.css */
+  .mensagem {
+    margin-bottom: 15px;
     padding: 10px;
-    margin-bottom: 20px;
-    text-align: left;
+    border-radius: 5px;
+    background-color: #f0f4c3; /* Amarelo claro */
+    color: #33691e; /* Verde escuro */
   }
 
   .text {
     text-align: left;
     padding: 0.7rem 0;
   }
+
+ 

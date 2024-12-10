@@ -5,6 +5,7 @@ export default class FocusController {
         this.focusService = new FocusService();
 
         this.getMonthlyFocusByEstate = this.getMonthlyFocusByEstate.bind(this);
+        this.getMonthlyFocusByRegion = this.getMonthlyFocusByRegion.bind(this);
     }
 
     async getMonthlyFocusByEstate(req, res) {

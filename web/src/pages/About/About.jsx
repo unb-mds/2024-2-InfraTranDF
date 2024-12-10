@@ -63,7 +63,9 @@ const About = () => {
                     <a href="/maps">Consultar Mapa</a>
                     <a href="/about" className="active">Equipe</a>
                 </nav>
-                <button className="alert-button">Receber Alertas</button>
+                <a href="/alert">
+                    <button className="alert-button">Receber Alertas</button>
+                </a>
                 <div className="user-icon"></div>
             </header>
 

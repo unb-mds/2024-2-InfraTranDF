@@ -2,8 +2,11 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import routes from './routes/index.js'
 import connection from './config/db.js';
+import cors from 'cors';
 
 const app = express();
+
+app.use(cors())
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

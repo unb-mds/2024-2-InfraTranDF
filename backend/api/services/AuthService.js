@@ -1,9 +1,9 @@
 import UserRepository from "../repositories/UserRepository.js";
 import UserService from './UserService.js';
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
 
-const SECRET_KEY = 'meu_sergredo';
-const TOKEN_EXPIRATION = '10m';
+dotenv.config();
 
 export default class AuthService {
     constructor() {
@@ -30,8 +30,8 @@ export default class AuthService {
             email: user.email,
             eAdmin: user.eAdmin
         },
-        SECRET_KEY,
-        { expiresIn: TOKEN_EXPIRATION });
+        process.env.SECRET_KEY,
+        { expiresIn: process.env.TOKEN_EXPIRATION });
 
         return token;
     }

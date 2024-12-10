@@ -7,6 +7,7 @@ CREATE TABLE focos (
     estado VARCHAR(100) NOT NULL,
     municipio VARCHAR(100) NOT NULL,
     bioma VARCHAR(100) NOT NULL,
+    regiao VARCHAR(100) NOT NULL,
     ano INT NOT NULL,
     PRIMARY KEY (foco_id, data_pas)
 )
@@ -44,7 +45,7 @@ CREATE INDEX idx_estado ON focos(estado);
 CREATE TABLE USUARIO (
     idUsuario INT NOT NULL auto_increment,
     nome VARCHAR(255) NOT NULL,
-	email VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
     eAdmin boolean default false,
     recebeAlertas boolean default false,

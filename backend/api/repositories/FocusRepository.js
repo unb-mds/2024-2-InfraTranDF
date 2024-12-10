@@ -16,7 +16,7 @@ export default class FocusRepository {
 
     async getMonthlyFocusByYear(month, year) {
         const query = `
-            SELECT MONTH(data_pas) AS mes, estado, COUNT(*) AS contagem
+            SELECT ano, MONTH(data_pas) AS mes, estado, COUNT(*) AS contagem
             FROM focos
             WHERE MONTH(data_pas) = ? AND ano = ?
             GROUP BY mes, estado;

@@ -1,4 +1,5 @@
 import UserRepository from '../repositories/UserRepository.js';
+import bcrypt from 'bcryptjs';
 
 export default class UserService {
     constructor() {
@@ -36,5 +37,24 @@ export default class UserService {
 
     async findById(id) {
         return await this.userRepository.findById(id);
+    }
+
+    async hashPassword(password) {
+        try {
+            const salt = await bcrypt.genSalt(10);
+            const hashedPassword = await bcrypt.hash(password, salt);
+            return hashedPassword;
+        } catch (error) {
+            throw new Error('Error ao hashear senha: ' + error.message);
+        }
+    }
+
+    async checkPassword(password, hashPassword) {
+        try {
+            const isMatch = await bcrypt.compare(password, hashPassword);
+            return isMatch;
+        } catch (error) {
+            throw new Error("Erro ao verificar a senha: " + error.message);
+        }
     }
 }

@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS mdschama;
+USE mdschama;
+
 CREATE TABLE focos (
     foco_id VARCHAR(255) NOT NULL,
     lat FLOAT NOT NULL,

@@ -15,6 +15,7 @@
     "bcryptjs": "^2.4.3",
     "csv-parser": "^3.0.0",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.5",
     "unzipper": "^0.12.3"
   }

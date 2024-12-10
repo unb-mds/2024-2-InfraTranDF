@@ -1,4 +1,167 @@
-.about {
+/* Fundo com fotos */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Envia para o fundo */
+    overflow: hidden;
+}
+
+.background-photo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.3;
+    animation: float 8s ease-in-out infinite;
+}
+
+.background-photo:nth-child(1) { top: 20%; left: 10%; }
+.background-photo:nth-child(2) { top: 50%; left: 90%; }
+.background-photo:nth-child(3) { top: 50%; left: 5%; }
+.background-photo:nth-child(4) { top: 80%; left: 10%; }
+.background-photo:nth-child(5) { top: 80%; left: 85%; }
+.background-photo:nth-child(6) { top: 20%; left: 85%; }
+
+
+/* Animação de flutuação */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+}
+
+/* Geral */
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Navbar */
+.about-header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2; 
+}
+
+.logo-image {
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Conteúdo */
+.about-content {
+    position: relative;
+    z-index: 2; 
+}
+
+/* Introdução */
+.about-intro {
     text-align: center;
-    padding: 2rem;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro h1 {
+    font-size: 36px;
+    color: #f57c00;
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Membros */
+.members-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.member-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.member-info a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f57c00;
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.member-info a:hover {
+    color: #e76a00;
 }

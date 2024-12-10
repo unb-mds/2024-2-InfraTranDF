@@ -12,7 +12,7 @@ const Home = () => {
         {
             image: '/src/assets/banners/banner-alerts.png',
             alt: 'Receber Alertas',
-            link: '/alerts',
+            link: '/alert',
         },
     ];
 

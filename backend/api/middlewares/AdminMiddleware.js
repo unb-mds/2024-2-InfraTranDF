@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
 
-const SECRET_KEY = 'meu_sergredo';
+dotenv.config();
 
 export default function authenticateAdminToken(req, res, next) {
     const authHeader = req.headers['authorization'];
@@ -10,7 +11,7 @@ export default function authenticateAdminToken(req, res, next) {
         return res.status(401).json({ error: 'Token não fornecido.' });
     }
 
-    jwt.verify(token, SECRET_KEY, (err, user) => {
+    jwt.verify(token, process.env.SECRET_KEY, (err, user) => {
         if (err) {
             return res.status(403).json({ error: 'Token inválido.' });
         }

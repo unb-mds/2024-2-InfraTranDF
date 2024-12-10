@@ -33,8 +33,17 @@ export default class UserRepository {
                 if (err) {
                     return reject(new Error('Erro ao obter usuário do banco de dados: ' + err.message));
                 }
-                if (results.length === 0) {
-                    return reject(new Error('Usuário de ID ' + id + ' não encontrado.'));
+                resolve(results[0]);
+            });
+        });
+    }
+
+    async findByEmail(email) {
+        return new Promise((resolve, reject) => {
+            const query = 'SELECT * FROM USUARIO WHERE email = ?';
+            connection.query(query, [email], (err, results) => {
+                if (err) {
+                    return reject(new Error('Erro ao obter usuário do banco de dados: ' + err.message));
                 }
                 resolve(results[0]);
             });

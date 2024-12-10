@@ -1,7 +1,10 @@
 import express from 'express';
 import UserController from '../api/controllers/UserController.js';
+import AuthController from '../api/controllers/AuthController.js';
+import authenticateToken from '../api/middlewares/AuthMiddleware.js';
 
 const userController = new UserController();
+const authController = new AuthController();
 
 const router = express.Router();
 
@@ -10,7 +13,9 @@ router.get('/hello', (req, res) => {
 });
 
 router.post('/users', userController.createUser)
-router.get('/users', userController.findAll)
-router.get('/users/:id', userController.findById)
+router.get('/users', authenticateToken, userController.findAll)
+router.get('/users/:id', authenticateToken, userController.findById)
+
+router.post('/login', authController.authenticate)
 
 export default router;

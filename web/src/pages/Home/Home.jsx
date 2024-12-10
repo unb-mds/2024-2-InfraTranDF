@@ -34,11 +34,14 @@ const Home = () => {
                     <a href="/maps">Consultar Mapa</a>
                     <a href="/about">Equipe</a>
                 </nav>
-                <a href="/alert">
-                    <button className="alert-button">Receber Alertas</button>
-                </a>    
-                <div className="user-icon"></div>
+                <div className="nav-actions">
+                    <a href="/alert">
+                        <button className="alert-button">Receber Alertas</button>
+                    </a>
+                    <div className="user-icon"></div>
+                </div>
             </header>
+
 
             {/* Banner com Slider */}
             <div className="banner-slider">

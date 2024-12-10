@@ -5,6 +5,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
 * {
   margin: 0;
   padding: 0;

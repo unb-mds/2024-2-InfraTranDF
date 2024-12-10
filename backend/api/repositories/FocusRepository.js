@@ -68,4 +68,23 @@ export default class FocusRepository {
             });
         });
     }
+
+    async getYearFocusFromEstate(estate, year) {
+        const query = `
+            SELECT ano, MONTH(data_pas) as mes, estado, count(*) as quantidade_focos
+            FROM focos
+            WHERE ano = ? AND estado = ?
+            GROUP BY MONTH(data_pas)
+            ORDER BY mes;
+        `;
+
+        return new Promise((resolve, reject) => {
+            connection.query(query, [year, estate], (err, results) => {
+                if (err) {
+                    reject(new Error('Erro ao obter dados: ' + err.message));
+                }
+                resolve(results);
+            });
+        });
+    }
 }

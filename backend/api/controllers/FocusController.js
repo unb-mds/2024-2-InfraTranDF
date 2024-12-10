@@ -7,6 +7,7 @@ export default class FocusController {
         this.getMonthlyFocusByEstate = this.getMonthlyFocusByEstate.bind(this);
         this.getMonthlyFocusByRegion = this.getMonthlyFocusByRegion.bind(this);
         this.getYearFocusFromRegion = this.getYearFocusFromRegion.bind(this);
+        this.getYearFocusFromEstate = this.getYearFocusFromEstate.bind(this);
     }
 
     async getMonthlyFocusByEstate(req, res) {
@@ -36,6 +37,17 @@ export default class FocusController {
 
         try {
             const data = await this.focusService.getYearFocusFromRegion(region, parseInt(year, 10));
+            res.status(200).json(data);
+        } catch (error) {
+            res.status(500).json({ error: error.message });
+        }
+    }
+
+    async getYearFocusFromEstate(req, res) {
+        const { estate, year } = req.params;
+
+        try {
+            const data = await this.focusService.getYearFocusFromEstate(estate, parseInt(year, 10));
             res.status(200).json(data);
         } catch (error) {
             res.status(500).json({ error: error.message });

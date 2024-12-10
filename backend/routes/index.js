@@ -21,7 +21,8 @@ router.get('/users/:id', authenticateToken, userController.findById)
 
 router.post('/login', authController.authenticate)
 
-router.get('/focusEstate/:month/:year', focusController.getMonthlyFocusByEstate)
-router.get('/focusRegion/:month/:year', focusController.getMonthlyFocusByRegion)
+router.get('/focusEstateMonthYear/:month/:year', focusController.getMonthlyFocusByEstate)
+router.get('/focusRegionMonthYear/:month/:year', focusController.getMonthlyFocusByRegion)
+router.get('/focusYearRegionYear/:region/:year', focusController.getYearFocusFromRegion)
 
 export default router;

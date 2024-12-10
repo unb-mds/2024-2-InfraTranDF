@@ -31,4 +31,13 @@ export default class FocusService {
         const data = await this.focusRepository.getMonthlyFocusByRegion(month, year);
         return data;
     }
+
+    async getYearFocusFromRegion(region, year) {
+        if (!Number.isInteger(year) || year.toString().length !== 4) {
+            throw new Error('O ano deve ser um número inteiro com 4 dígitos.');
+        }
+
+        const data = await this.focusRepository.getYearFocusFromRegion(region, year);
+        return data;
+    }
 }

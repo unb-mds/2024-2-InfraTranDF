@@ -17,7 +17,9 @@ const Maps = () => {
                     <a href="/maps" className="active">Consultar Mapa</a>
                     <a href="/about">Equipe</a>
                 </nav>
-                <button className="alert-button">Receber Alertas</button>
+                <a href="/alert">
+                    <button className="alert-button">Receber Alertas</button>
+                </a>
                 <div className="user-icon"></div>
             </header>
             <main className="maps-content">

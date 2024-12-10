@@ -1,0 +1,137 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.alert-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.home-header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+    height: 50px;
+    object-fit: contain;
+}
+
+.navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.navigation a.active {
+    color: #f57c00;
+}
+
+.navigation a:hover {
+    color: #f57c00;
+}
+
+.alert-button {
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.alert-button:hover {
+    background-color: #e76a00;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f57c00;
+    border-radius: 50%;
+}
+
+/* Conteúdo */
+.alert-content {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert-content h1 {
+    font-size: 32px;
+    color: #f57c00;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.alert-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #f57c00;
+}
+
+.submit-button {
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #e76a00;
+}

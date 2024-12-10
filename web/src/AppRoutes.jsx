@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import App from "./pages/App/App";
 import Home from './pages/Home/Home';
 import Maps from './pages/Maps/Maps';
-import Report from './pages/Report/Report';
+import Alert from './pages/Alert/Alert'; 
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
@@ -15,7 +15,7 @@ function AppRoutes() {
                 <Route path="/" element={<App />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/maps" element={<Maps />} />
-                <Route path="/report" element={<Report />} />
+                <Route path="/alert" element={<Alert />} /> 
                 <Route path="/about" element={<About />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
@@ -23,6 +23,5 @@ function AppRoutes() {
         </AuthProvider>
     );
 }
-
 
 export default AppRoutes;

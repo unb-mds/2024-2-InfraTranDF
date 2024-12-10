@@ -174,3 +174,39 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o botão e o ícone */
+}
+
+.alert-button {
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0; /* Remove margens extras */
+}
+
+.alert-button:hover {
+    background-color: #e76a00;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f57c00;
+    border-radius: 50%;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f57c00;
+    border-radius: 50%;
+    margin-right: 25px;
+}

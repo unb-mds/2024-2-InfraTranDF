@@ -102,7 +102,7 @@ Acesse a documentação completa do projeto [aqui](https://unb-mds.github.io/202
 
 ### Arquitetura
 
-- Visualize o diagrama de arquitetura do projeto, clique [aqui](https://www.figma.com/).
+- Visualize o diagrama de arquitetura do projeto, clique [aqui](https://www.figma.com/design/4eVXq7dgs2j8SpdVHSLbB1/Arquitetura---ChamaControl?node-id=0-1&t=rv9rNCBxhKdR6XxI-1).
 
 ### Protótipo Visual
 

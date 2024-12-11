@@ -1,13 +1,14 @@
-import styles from './Register.module.css'
-
-import { useState } from "react";
-import { Link } from 'react-router-dom';
-import axios from "axios"
+import './Register.css'
+import React, { useState } from "react";
 
 const Register = () => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
+  const [dataNascimento, setDataNascimento] = useState("");
+  const [celular, setCelular] = useState("");
+  const [genero, setGenero] = useState("");
+  const [cpfCnpj, setCpfCnpj] = useState("");
+  const [password, setPassword] = useState("");
   const [mensagem, setMensagem] = useState("");
 
   const handleSignUp = async (e) => {
@@ -16,33 +17,17 @@ const Register = () => {
     const userData = {
       nome,
       email,
-      senha,
+      dataNascimento,
+      celular,
+      genero,
+      cpfCnpj,
+      password,
     };
 
-    try {
-      // Faz a requisição POST ao backend para criar o usuário
-      console.log(userData);
-
-      const response = await axios.post('http://localhost:3000/api/users', userData);
-  
-      // Exibe uma mensagem de sucesso ou redireciona o usuário
-      setMensagem("Usuário criado com sucesso!");
-      
-      // Opcional: redireciona o usuário para a página de login
-      setTimeout(() => {
-        window.location.href = '/login'; // Redireciona para a página de login
-      }, 2000); // Espera 2 segundos antes de redirecionar
-  
-    } catch (error) {
-      // Se houver um erro (por exemplo, email já existente), exibe a mensagem
-      setMensagem(error.response ? error.response.data.error : "Erro desconhecido");
-    }
-
-  };
  
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className={styles.signUpContainer}>
         <div className={styles.signUpBox}>
           <h2>Criar Conta</h2>
@@ -71,12 +56,59 @@ const Register = () => {
               />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="Senha">Senha</label>
+              <label htmlFor="dataNascimento">Data de Nascimento</label>
               <input
-                type="Senha"
-                id="Senha"
-                value={senha}
-                onChange={(e) => setSenha(e.target.value)}
+                type="date"
+                id="dataNascimento"
+                value={dataNascimento}
+                onChange={(e) => setDataNascimento(e.target.value)}
+                required
+              />
+            </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="celular">Celular</label>
+              <input
+                type="tel"
+                id="celular"
+                value={celular}
+                onChange={(e) => setCelular(e.target.value)}
+                placeholder="(XX) XXXXX-XXXX"
+                required
+              />
+            </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="genero">Gênero</label>
+              <select
+                id="genero"
+                value={genero}
+                onChange={(e) => setGenero(e.target.value)}
+                required
+              >
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+                <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+              </select>
+            </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="cpfCnpj">CPF ou CNPJ</label>
+              <input
+                type="text"
+                id="cpfCnpj"
+                value={cpfCnpj}
+                onChange={(e) => setCpfCnpj(e.target.value)}
+                placeholder="Seu CPF ou CNPJ"
+                required
+              />
+            </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="password">Senha</label>
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Sua senha"
                 required
               />
@@ -84,15 +116,13 @@ const Register = () => {
             <button type="submit" className={styles.signUpButton}>
               Criar Conta
             </button>
-            <p className={styles.text}>Já tem uma conta?</p>
-            <Link to="/Login" className={styles.signUpButton}>Login</Link>
           </form>
         </div>
-        {/* <img src={bannerImage} alt="Sign Up" className={styles.signUpImage} /> */}
+        <img src={bannerImage} alt="Sign Up" className={styles.signUpImage} />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
-
+}
 export default Register

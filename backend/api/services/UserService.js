@@ -9,7 +9,7 @@ export default class UserService {
     async createUser(userDto) {
         const { nome, email, senha } = userDto;
 
-        if (nome == undefined || nome == '' || nome.trim() == ' ') {
+        if (nome == undefined || nome == '' || nome == ' ') {
             throw new Error('Nome inválido.');
         }
 

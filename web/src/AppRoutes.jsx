@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
+import App from "./pages/App/App";
 import Home from './pages/Home/Home';
 import Maps from './pages/Maps/Maps';
 import Alert from './pages/Alert/Alert'; 
@@ -12,7 +12,8 @@ function AppRoutes() {
     return (
         <AuthProvider>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<App />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/maps" element={<Maps />} />
                 <Route path="/alert" element={<Alert />} /> 
                 <Route path="/about" element={<About />} />

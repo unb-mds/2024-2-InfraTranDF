@@ -3,7 +3,7 @@
     display: flex;
     align-items: stretch; /* Garante que os itens tenham a mesma altura */
     justify-content: center;
-    background: #f9f9f9;
+    background: #f5f5f5;
     padding: 30px;
     min-height: calc(100vh - 165px);
   }
@@ -14,8 +14,7 @@
     padding: 40px;
     padding-bottom: 10px;
     width: 320px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border: 2px solid #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
     margin-right: -30px;
@@ -35,7 +34,7 @@
   .signUpBox h2 {
     margin-bottom: 30px;
     margin-top: 0px;
-    color: #333;
+    color: #0c0c0c;
     font-size: 2.5rem;
   }
   
@@ -61,9 +60,7 @@
   }
   
   .signUpButton {
-    display: block;
-    background: #f57c00;
-    color: #fff;
+    background: #f3c404;
     border: none;
     width: 100%;
     padding: 12px;
@@ -75,7 +72,7 @@
   }
   
   .signUpButton:hover {
-    background: #e66a00;
+    background: #cfa200;
   }
   
   /* SignUpPage.module.css */
@@ -86,10 +83,3 @@
     background-color: #f0f4c3; /* Amarelo claro */
     color: #33691e; /* Verde escuro */
   }
-
-  .text {
-    text-align: left;
-    padding: 0.7rem 0;
-  }
-
- 

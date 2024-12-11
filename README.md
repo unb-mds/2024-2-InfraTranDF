@@ -56,11 +56,10 @@ npm install
 Dentro de `/web`
 ```shell
 # Na pasta /web execute os comandos
-npm run build
-npm run preview
+npm run dev
 ```
 
-O front-end ficara disponivel em: http://localhost:4173/
+O front-end ficara disponivel em: http://localhost:5173/
 
 #### Back-end
 

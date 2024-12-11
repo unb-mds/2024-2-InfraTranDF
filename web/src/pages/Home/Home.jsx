@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         {
             image: '/src/assets/banners/banner-alerts.png',
             alt: 'Receber Alertas',
-            link: '/alerts',
+            link: '/alert',
         },
     ];
 

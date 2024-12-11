@@ -4,8 +4,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "populaFocos": "node scraper/coletaAnual.js && node scraper/processaDados.js",
+    "app": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.5",

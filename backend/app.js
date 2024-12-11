@@ -6,11 +6,12 @@ import cors from 'cors';
 
 const app = express();
 
-const corsOptions = {
-    origin: 'http://localhost:5173', // Permite apenas o front-end nesse endereço
-    methods: 'GET,POST', // Métodos permitidos
-    allowedHeaders: 'Content-Type,Authorization', // Cabeçalhos permitidos
-  };
+
+app.use(cors())
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 
   app.use(cors(corsOptions));
 

@@ -24,7 +24,7 @@ Por favor, relate qualquer vulnerabilidade encontrada enviando um e-mail para [c
 
 ## Agradecimento
 
-Agradecemos a sua contribuição para a segurança do Licita BSB. Juntos, podemos garantir um ambiente seguro e confiável para todos os usuários.
+Agradecemos a sua contribuição para a segurança do ChamaControl. Juntos, podemos garantir um ambiente seguro e confiável para todos os usuários.
 
 **Contato:** Se você tiver alguma dúvida ou preocupação sobre nossa política de segurança, entre em contato conosco pelo e-mail [chamacontrol@gmail.com](mailto:chamacontrol@gmail.com).
 

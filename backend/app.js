@@ -14,7 +14,9 @@ app.use(bodyParser.json());
 
 app.use('/api', routes);
 
-connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
+
+connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
+
     if (err) throw err;
     console.log('Banco de dados funcionando se = 2:', rows[0].solution);
 });

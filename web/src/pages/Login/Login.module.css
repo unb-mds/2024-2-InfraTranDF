@@ -77,6 +77,15 @@
     text-align: left;
   }
 
+  .successMessage {
+    background-color:   #f0f4c3;
+    color: #33691e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
   .text {
     text-align: left;
     padding: 0.7rem 0;

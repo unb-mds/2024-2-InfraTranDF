@@ -12,19 +12,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
-  app.use(cors(corsOptions));
-
-  // Middleware para interpretar o corpo das requisições como JSON
-  app.use(express.json()); 
-  
-  // Usando as rotas do arquivo 'index.js'
-  app.use('/api', routes);
-
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
-// app.use('/api', routes);
+app.use('/api', routes);
 
 connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
     if (err) throw err;

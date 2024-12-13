@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './Maps.css';
+import { Pie } from 'react-chartjs-2';
+import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement } from 'chart.js';
+
+ChartJS.register(ArcElement, Title, Tooltip, Legend);
 
 const Maps = () => {
     const [selectedRegion, setSelectedRegion] = useState("Brasil");
@@ -7,6 +11,54 @@ const Maps = () => {
 
     const regions = ["Brasil", "Norte", "Nordeste", "Centro-oeste", "Sudeste", "Sul"];
     const years = Array.from({ length: 2024 - 2003 + 1 }, (_, i) => 2003 + i);
+
+    const data = {
+        labels: [
+            'MINAS GERAIS',
+            'PIAUÍ',
+            'GOIÁS',
+            'PARAÍBA',
+            'BAHIA',
+            'RIO GRANDE DO SUL',
+            'SANTA CATARINA',
+            'PARÁ',
+            'TOCANTINS',
+            'MARANHÃO',
+            'CEARÁ',
+            'PERNAMBUCO',
+            'RIO GRANDE DO NORTE',
+            'SÃO PAULO',
+            'PARANÁ',
+            'MATO GROSSO DO SUL',
+            'AMAZONAS',
+            'AMAPÁ',
+            'ALAGOAS',
+            'MATO GROSSO',
+            'RIO DE JANEIRO',
+            'RORAIMA',
+            'ESPÍRITO SANTO',
+            'RONDÔNIA',
+            'SERGIPE',
+            'ACRE',
+        ],
+        datasets: [
+            {
+                data: [
+                    192, 1209, 76, 406, 197, 152, 100, 5760, 203, 4038, 2062, 401, 153, 110, 192,
+                    439, 502, 407, 26, 1198, 15, 181, 8, 357, 5, 152,
+                ],
+                backgroundColor: [
+                    '#FF6384', '#36A2EB', '#FFCE56', '#FF6384', '#36A2EB', '#FFCE56', '#FF6384',
+                    '#36A2EB', '#FFCE56', '#FF6384', '#36A2EB', '#FFCE56', '#FF6384', '#36A2EB',
+                    '#FFCE56', '#FF6384', '#36A2EB', '#FFCE56', '#FF6384', '#36A2EB', '#FFCE56',
+                    '#FF6384', '#36A2EB', '#FFCE56', '#FF6384',
+                ],
+                borderColor: 'white',
+                borderWidth: 1,
+            },
+        ],
+    };
+
 
     return (
         <div className="maps-page">
@@ -69,11 +121,10 @@ const Maps = () => {
                     </div>
                 </aside>
                 <section className="chart-section">
-                    <h3>Gráfico de Queimadas</h3>
-                    <div className="chart-placeholder">
-                        {/* Aqui vai o gráfico */}
-                        <p>Gráfico será carregado aqui</p>
-                    </div>
+                    <h3 className="chart-text">Focos registrados em cada estado (2011/11)</h3>
+                    <section className="chart-placeholder">
+                        <Pie data={data} />
+                    </section>
                 </section>
             </main>
         </div>

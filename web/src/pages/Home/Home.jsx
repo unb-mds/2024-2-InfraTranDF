@@ -30,7 +30,7 @@ const Home = () => {
             <header className="home-header">
                 <img src="/src/assets/logo-png.png" alt="ChamaControl" className="logo-image" />
                 <nav className="navigation">
-                    <a href="/home" className="active">Início</a>
+                    <a href="/" className="active">Início</a>
                     <a href="/maps">Consultar Mapa</a>
                     <a href="/about">Equipe</a>
                 </nav>

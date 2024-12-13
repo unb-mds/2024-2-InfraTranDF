@@ -1,8 +1,8 @@
 import styles from './Register.module.css'
 
-import { useState } from "react";
-import { Link } from 'react-router-dom';
-import axios from "axios"
+import { AuthContext } from "../../context/AuthContext";
+import { useState, useContext } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [nome, setNome] = useState("");
@@ -10,43 +10,46 @@ const Register = () => {
   const [senha, setSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
 
+  const { register, loading } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const handleSignUp = async (e) => {
     e.preventDefault();
 
-    const userData = {
-      nome,
-      email,
-      senha,
-    };
+    if (!nome || nome.trim() === "") {
+      setMensagem({ text: "O nome é obrigatório.", type: "error" });
+      return;
+    }
 
     try {
-      // Faz a requisição POST ao backend para criar o usuário
-      console.log(userData);
-
-      const response = await axios.post('http://localhost:3000/api/users', userData);
-  
-      // Exibe uma mensagem de sucesso ou redireciona o usuário
-      setMensagem("Usuário criado com sucesso!");
-      
-      // Opcional: redireciona o usuário para a página de login
+      await register(email, senha, nome);  
+      setMensagem({ text: "Usuário criado com sucesso!", type: "success" }); 
       setTimeout(() => {
-        window.location.href = '/login'; // Redireciona para a página de login
-      }, 2000); // Espera 2 segundos antes de redirecionar
+        navigate('/login'); 
+      }, 1000); 
   
     } catch (error) {
-      // Se houver um erro (por exemplo, email já existente), exibe a mensagem
-      setMensagem(error.response ? error.response.data.error : "Erro desconhecido");
+      setMensagem({ text: error.message, type: "error" });
     }
 
   };
  
   return (
     <div>
-      {/* <Navbar /> */}
       <div className={styles.signUpContainer}>
         <div className={styles.signUpBox}>
           <h2>Criar Conta</h2>
-          {mensagem && <p className={styles.mensagem}>{mensagem}</p>}
+          {mensagem && (
+            <div
+              className={
+                mensagem.type === "error"
+                  ? styles.errorMessage
+                  : styles.successMessage
+              }
+            >
+              {mensagem.text}
+            </div>
+          )}
           <form onSubmit={handleSignUp}>
             <div className={styles.inputGroup}>
               <label htmlFor="nome">Nome</label>
@@ -73,7 +76,7 @@ const Register = () => {
             <div className={styles.inputGroup}>
               <label htmlFor="Senha">Senha</label>
               <input
-                type="Senha"
+                type="password"
                 id="Senha"
                 value={senha}
                 onChange={(e) => setSenha(e.target.value)}
@@ -81,16 +84,14 @@ const Register = () => {
                 required
               />
             </div>
-            <button type="submit" className={styles.signUpButton}>
-              Criar Conta
+            <button type="submit" disabled={loading} className={styles.signUpButton}>
+              {loading ? "Criando conta..." : "Criar Conta"}
             </button>
             <p className={styles.text}>Já tem uma conta?</p>
             <Link to="/Login" className={styles.signUpButton}>Login</Link>
           </form>
         </div>
-        {/* <img src={bannerImage} alt="Sign Up" className={styles.signUpImage} /> */}
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

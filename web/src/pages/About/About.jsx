@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.css';
 
 const members = [
@@ -59,7 +58,7 @@ const About = () => {
             <header className="home-header">
                 <img src="/src/assets/logo-png.png" alt="ChamaControl" className="logo-image" />
                 <nav className="navigation">
-                    <a href="/home">Início</a>
+                    <a href="/">Início</a>
                     <a href="/maps">Consultar Mapa</a>
                     <a href="/about" className="active">Equipe</a>
                 </nav>

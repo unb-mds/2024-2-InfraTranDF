@@ -6,7 +6,7 @@ import Alert from './pages/Alert/Alert';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthProvider";
 
 function AppRoutes() {
     return (

@@ -78,13 +78,22 @@
     background: #e66a00;
   }
   
-  /* SignUpPage.module.css */
-  .mensagem {
-    margin-bottom: 15px;
-    padding: 10px;
+  .errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
     border-radius: 5px;
-    background-color: #f0f4c3; /* Amarelo claro */
-    color: #33691e; /* Verde escuro */
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .successMessage {
+    background-color:   #f0f4c3;
+    color: #33691e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
   }
 
   .text {
